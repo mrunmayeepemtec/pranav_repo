@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const BookTable = (props) => {
-  const [UId, setUId] = useState();
-  const [HId, setId] = useState();
-  const [BId, setBId] = useState();
-  const [No_Of_Table, setNTable] = useState();
+const HotelMaster = (props) => {
+  const [Id, setId] = useState();
+  const [Name, setName] = useState();
+  const [Address, setAddress] = useState();
+  const [Rating, setRating] = useState();
 
-  const  bookTable=()=> {
+  const  addHotel=()=> {
     const object = {
-        UId : UId , 
-        HId : HId ,
-        BId : BId,
-        No_of_Table : No_Of_Table ,
+        id : Id , 
+        name : Name ,
+        address : Address,
+        rating : Rating ,
         status : 1
     }
-    const bookingData = JSON.parse(localStorage.getItem("bookingData") || " []")
-    bookingData.push(object)
-    localStorage.setItem("bookingData",JSON.stringify(bookingData))
-    window.alert("Booking Data Added successfully");
+    const hotelData = JSON.parse(localStorage.getItem("hoteldata") || " []")
+    hotelData.push(object)
+    localStorage.setItem("hoteldata",JSON.stringify(hotelData))
+    window.alert("Hotel Data Added successfully");
   }
   return (
     <div>
@@ -27,44 +27,35 @@ const BookTable = (props) => {
         <Link to="/">
           <h5 className="navbar-brand text-white">Home</h5>
         </Link>
-        <Link to="/UserHome">
+        <Link to="/AdminHome">
           <h5 className="navbar-brand text-white">Dashboard</h5>
         </Link>
-        <Link to="/HotelList">
-          <h5 className="navbar-brand text-white">Hotels</h5>
+        <Link to="/EditHotel">
+          <h5 className="navbar-brand text-white">Edit Hotel Master </h5>
         </Link>
-        <Link to="/CancelReservation">
-          <h5 className="navbar-brand text-white">Cancel Reservation</h5>
+        <Link to="/BookingList">
+          <h5 className="navbar-brand text-white">Bookings</h5>
+        </Link>
+        <Link to="/CanceledBookingList">
+          <h5 className="navbar-brand text-white">Canceled Bookings</h5>
+        </Link>
+        <Link to="/UsersList">
+          <h5 className="navbar-brand text-white">Users</h5>
         </Link>
       </nav>
-      <div className="text-center m-5"><h1>Book Table</h1></div>
+      <div className="text-center m-5"><h1>Add Hotel</h1></div>
       <div className="inputBody m-5">
         <div className="input-group">
           <span className="input-group-text">
             <label>
-              <b>User ID </b>
+              <b>Hotel ID </b>
             </label>
           </span>
           <input
-            id="uid"
-            onChange={(e) => setUId(e.target.value)}
-            className="form-control"
-            placeholder="Enter User UId"
-            aria-label="With input"
-          ></input>
-        </div>
-        <br />
-        <div className="input-group">
-          <span className="input-group-text">
-            <label>
-              <b>Hotel Id </b>
-            </label>
-          </span>
-          <input
-            id="hid"
+            id="id"
             onChange={(e) => setId(e.target.value)}
             className="form-control"
-            placeholder="Enter HotelId"
+            placeholder="Enter Hotel Id"
             aria-label="With input"
           ></input>
         </div>
@@ -72,14 +63,14 @@ const BookTable = (props) => {
         <div className="input-group">
           <span className="input-group-text">
             <label>
-              <b>Book Id</b>
+              <b>Hotel Name </b>
             </label>
           </span>
           <input
-            id="bid"
-            onChange={(e) => setBId(e.target.value)}
+            id="id"
+            onChange={(e) => setName(e.target.value)}
             className="form-control"
-            placeholder="Book Id"
+            placeholder="Enter Name"
             aria-label="With input"
           ></input>
         </div>
@@ -87,19 +78,34 @@ const BookTable = (props) => {
         <div className="input-group">
           <span className="input-group-text">
             <label>
-              <b>No_Of_Table</b>
+              <b>Hotel Address</b>
             </label>
           </span>
           <input
-            id="count"
-            onChange={(e) => setNTable(e.target.value)}
+            id="name"
+            onChange={(e) => setAddress(e.target.value)}
             className="form-control"
-            placeholder="No of Table"
+            placeholder="Address"
+            aria-label="With input"
+          ></input>
+        </div>
+        <br />
+        <div className="input-group">
+          <span className="input-group-text">
+            <label>
+              <b>Rating</b>
+            </label>
+          </span>
+          <input
+            id="rating"
+            onChange={(e) => setRating(e.target.value)}
+            className="form-control"
+            placeholder="Rating"
             aria-label="With input"
           ></input>
         </div>
         <div className="successButton mt-3">
-          <button onClick={bookTable} type="button" className="btn btn-success">
+          <button onClick={addHotel} type="button" className="btn btn-success">
             SUBMIT
           </button>
         </div>
@@ -108,4 +114,4 @@ const BookTable = (props) => {
   );
 };
 
-export default BookTable;
+export default HotelMaster;

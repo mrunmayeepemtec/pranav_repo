@@ -1,58 +1,61 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function HotelDisplay(props) {
+const HotelList = () => {
+  const [hotelArr, setArr] = useState([]);
+  useEffect(() => {
+    const hotelData = localStorage.getItem("hoteldata");
+    setArr(JSON.parse(hotelData));
+  }, []);
+ 
   return (
     <div>
+       <nav className="navbar navbar-expand-lg navbar-light navbar-dark bg-dark ">
+        <h5 className="navbar-brand text-white">WELCOME </h5>
+        <Link to="/">
+          <h5 className="navbar-brand text-white">Home </h5>
+        </Link>
+        <Link to="/UserHome">
+          <h5 className="navbar-brand text-white">Dashboard </h5>
+        </Link>
+        <Link to="/BookTable">
+          <h5 className="navbar-brand text-white">Book Table </h5>
+        </Link>
+        <Link to="/CancelReservation">
+          <h5 className="navbar-brand text-white">Cancel Reservation</h5>
+        </Link>
+      </nav>
+      <div className="text-center m-5"><h1>Hotel Details</h1></div>
       <table className="table table-striped table-hover">
         <thead>
           <tr>
-            <td>Hotel Id</td>
-            <td>Name</td>
-            <td>Address</td>
-            <td>Rating</td>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Rating</th>
           </tr>
         </thead>
         <tbody>
-          {props.map((value) => {
-            return (
-              <tr>
-                <td>{value.Id}</td>
-                <td>{value.Name}</td>
-                <td>{value.Address}</td>
-                <td>{value.Rating}</td>
-              </tr>
-            );
-          })}
+          {hotelArr && hotelArr.length > 0
+            ? hotelArr.map((hotelData, index) => {
+                if (hotelData.status === 1) {
+                  return (
+                    <tr>
+                      <td> {index + 1}</td>
+                      <td>{hotelData.id}</td>
+                      <td>{hotelData.name}</td>
+                      <td>{hotelData.address}</td>
+                      <td>{hotelData.rating}</td>
+                    </tr>
+                  );
+                }
+              })
+            : "no data"}
         </tbody>
       </table>
     </div>
   );
-}
-const HotelList = (props) => {
-  return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light navbar-dark bg-dark ">
-        <h5 className="navbar-brand text-white">The Hotel Piece |</h5>
-        <Link to="/">
-          <h5 className="navbar-brand text-white">Home</h5>
-        </Link>
-      </nav>
-      <div></div>
-      <Link to="/UserHome">
-        <button className="row mt-2 btn btn-success m-2" type="submit">
-          Back
-        </button>
-      </Link>
-      <div align="center">
-        <h1>Hotel List</h1>
-      </div>
-      <div>
-        {HotelDisplay(props.hotelData)}
-        <hr></hr>
-      </div>
-    </div>
-  );
 };
-
 export default HotelList;
