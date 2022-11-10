@@ -1,0 +1,14 @@
+C:\C#\Second_Assg\bin\Debug\netcoreapp3.1\Second_Assg.exe
+C:\C#\Second_Assg\bin\Debug\netcoreapp3.1\Second_Assg.deps.json
+C:\C#\Second_Assg\bin\Debug\netcoreapp3.1\Second_Assg.runtimeconfig.json
+C:\C#\Second_Assg\bin\Debug\netcoreapp3.1\Second_Assg.runtimeconfig.dev.json
+C:\C#\Second_Assg\bin\Debug\netcoreapp3.1\Second_Assg.dll
+C:\C#\Second_Assg\bin\Debug\netcoreapp3.1\Second_Assg.pdb
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.csproj.AssemblyReference.cache
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.AssemblyInfoInputs.cache
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.AssemblyInfo.cs
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.csproj.CoreCompileInputs.cache
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.dll
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.pdb
+C:\C#\Second_Assg\obj\Debug\netcoreapp3.1\Second_Assg.genruntimeconfig.cache
