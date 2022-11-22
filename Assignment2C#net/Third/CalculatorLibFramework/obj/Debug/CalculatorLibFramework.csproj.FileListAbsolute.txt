@@ -1,0 +1,6 @@
+C:\.net\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\.net\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\.net\ClassLibrary1\obj\Debug\CalculatorLibFramework.csproj.AssemblyReference.cache
+C:\.net\ClassLibrary1\obj\Debug\CalculatorLibFramework.csproj.CoreCompileInputs.cache
+C:\.net\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\.net\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

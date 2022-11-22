@@ -1,0 +1,15 @@
+C:\.net\ArithmaticOperationCore\bin\Debug\net6.0\ArithmaticOperationCore.exe
+C:\.net\ArithmaticOperationCore\bin\Debug\net6.0\ArithmaticOperationCore.deps.json
+C:\.net\ArithmaticOperationCore\bin\Debug\net6.0\ArithmaticOperationCore.runtimeconfig.json
+C:\.net\ArithmaticOperationCore\bin\Debug\net6.0\ArithmaticOperationCore.dll
+C:\.net\ArithmaticOperationCore\bin\Debug\net6.0\ArithmaticOperationCore.pdb
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.csproj.AssemblyReference.cache
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.AssemblyInfoInputs.cache
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.AssemblyInfo.cs
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.csproj.CoreCompileInputs.cache
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.dll
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\refint\ArithmaticOperationCore.dll
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.pdb
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ArithmaticOperationCore.genruntimeconfig.cache
+C:\.net\ArithmaticOperationCore\obj\Debug\net6.0\ref\ArithmaticOperationCore.dll

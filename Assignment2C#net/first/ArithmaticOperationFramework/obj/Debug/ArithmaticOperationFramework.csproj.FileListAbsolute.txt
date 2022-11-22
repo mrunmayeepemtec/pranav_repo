@@ -1,0 +1,8 @@
+C:\.net\ArithmaticOperationFramework\bin\Debug\ArithmaticOperationFramework.exe.config
+C:\.net\ArithmaticOperationFramework\bin\Debug\ArithmaticOperationFramework.exe
+C:\.net\ArithmaticOperationFramework\bin\Debug\ArithmaticOperationFramework.pdb
+C:\.net\ArithmaticOperationFramework\obj\Debug\ArithmaticOperationFramework.csproj.AssemblyReference.cache
+C:\.net\ArithmaticOperationFramework\obj\Debug\ArithmaticOperationFramework.csproj.SuggestedBindingRedirects.cache
+C:\.net\ArithmaticOperationFramework\obj\Debug\ArithmaticOperationFramework.csproj.CoreCompileInputs.cache
+C:\.net\ArithmaticOperationFramework\obj\Debug\ArithmaticOperationFramework.exe
+C:\.net\ArithmaticOperationFramework\obj\Debug\ArithmaticOperationFramework.pdb
